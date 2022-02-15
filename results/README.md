@@ -1,11 +1,3 @@
-# Analysis results directory descriptions
+# Results directory overview
 
-The subdirectories within `results/` may include multiple analysis IDs. Model fitting and inference details for each analysis are detailed here.
-
-<details>
-<summary>Analysis descriptions</summary><br/>
-
-* `0001`: {Insert details here regarding analysis software, data normalizations, model variables, model fitting and inference parameters, etc.}
-
-</details>
-
+The subdirectories within `results/` are divided by stage of analysis. Each stage will include a subdirectory ID that denotes a particular type of munging or analysis (e.g., RNA-seq sample QC or differential gene expression analysis) using a sequential numbering system. Each munging or analysis type will have its own subdirectory with a sequential numbering system for specific instances of that type.

@@ -30,4 +30,10 @@ RUN mamba install --quiet --yes \
   'r-argparse' \
   'pylint'
 
+COPY code_linter/lint.R /opt/bin/
+
+RUN chmod a+x /opt/bin/lint.R
+
+ENV PATH="$PATH:/opt/bin"
+
 USER ${NB_UID}

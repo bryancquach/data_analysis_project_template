@@ -17,13 +17,13 @@ p <- argparse::ArgumentParser(
 p$add_argument(
   "-c",
   "--config",
+  default = NULL,
   type = "character",
   dest = "config",
-  required = TRUE,
+  required = FALSE,
   help = paste0(
-    "A .lintr DCF file that specifies the linters to use. A default file is available within the ",
-    "repository at tests/code_linting/r/lintr/.lintr that uses a modified version of Google's R ",
-    "style guide."
+    "A .lintr DCF file that specifies the linters to use. Will use the lintr package defaults ",
+    "if one is not specified or found in the `code_file` directory."
   )
 )
 p$add_argument(
@@ -36,17 +36,16 @@ p$add_argument(
 argv <- p$parse_args()
 config_file <- argv$config
 code_file <- argv$code_file
-cat("\nLoading .lintr file", config_file, "...\n")
-if (!file.exists(config_file)) {
+if (is.null(config_file)) {
+  cat("\nNo .lintr file provided. Using default lintr package settings.\n")
+} else if (!file.exists(config_file)) {
   warning(
-    paste0(
-      "Default .lintr file could not be found at ",
-      config_file,
-      ". Reverting to default lintr package settings."
-    )
+    "User-provided .lintr file could not be found. Using default lintr package settings."
   )
+} else {
+  cat("\nLoading .lintr file", config_file, "...\n")
+  options(lintr.linter_file = config_file)
 }
-options(lintr.linter_file = config_file)
 cat("\nLinting file", code_file, "...\n\n")
 lintr::lint(code_file)
 cat("Linting complete.\n")

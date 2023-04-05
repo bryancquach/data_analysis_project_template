@@ -14,8 +14,6 @@ docker build --rm --file <image_name>/Dockerfile --tag <dockerhub_account>/<imag
 
 The format for `<tag>` should be `yyyymmddhhmm_<architecture>` where `<architecture>` is one of `x86_64`, `arm64`, or `multiarch`. For example, the tag `202302241705_multiarch` signifies an image built on February 24, 2023 at 17:05 that is compatible with both the x86-64 and ARM64 architectures.
 
-**NOTE:** If you are on an arm64 system, then [`docker buildx`](https://docs.docker.com/build/building/multi-platform/) is needed to build an `x86_64` compatible image.
-
 ---
 ## Starting a container
 
@@ -32,3 +30,7 @@ Assuming `<host_port_number>` is `8889`, the Jupyter session can be accessed via
 
 * `image name`: Description here. Explicitly installed packages:
   * [package name v0.0](URL)
+* `code_linter`: Contains code linters for Python and R within Ubuntu 22.04. The following R and Python packages are explicitly installed via the Dockerfile:
+  * [argparse v2.2.2](https://cran.r-project.org/package=argparse)
+  * [lintr v3.0.2](https://cran.r-project.org/package=lintr)
+  * [pylint v2.17.1](https://pypi.org/project/pylint/)

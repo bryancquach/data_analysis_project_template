@@ -6,12 +6,7 @@
 #   Full name (email)
 #
 # Additional details worth noting, if any.
-package_list <- c(
-  "argparse"
-)
-for (package in package_list) {
-  library(package, character.only = TRUE, quietly = TRUE)
-}
+library(argparse)
 options(stringsAsFactors = FALSE)
 
 p <- argparse::ArgumentParser(
@@ -42,6 +37,13 @@ p$add_argument( #example positional argument
   )
 )
 argv <- p$parse_args()
+
+package_list <- c()
+for (package in package_list) {
+  suppressPackageStartupMessages(
+    library(package, character.only = TRUE, quietly = TRUE)
+  )
+}
 foo <- argv$foo #store option value
 bar <- argv$bar #store positional argument value
 

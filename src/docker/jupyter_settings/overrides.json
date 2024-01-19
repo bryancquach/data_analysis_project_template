@@ -9,17 +9,44 @@
     }
   },
   "@jupyterlab/notebook-extension:tracker": {
+    "defaultCell": "code",
+    "autoStartDefaultKernel": false,
+    "inputHistoryScope": "session",
+    "kernelShutdown": true,
+    "scrollPastEnd": true,
+    "recordTiming": false,
+    "overscanCount": 1,
+    "maxNumberOutputs": 50,
+    "showEditorForReadOnlyMarkdown": true,
+    "kernelStatus": {
+      "showOnStatusBar": true,
+      "showProgress": true
+    },
+    "documentWideUndoRedo": false,
+    "showHiddenCellsButton": true,
+    "renderingLayout": "default",
+    "sideBySideLeftMarginOverride": "10px",
+    "sideBySideRightMarginOverride": "10px",
+    "sideBySideOutputRatio": 1,
+    "windowingMode": "defer",
     "codeCellConfig": {
+      "highlightTrailingWhitespace": true,
+      "indentUnit": "2",
+      "lineWrap": false,
       "tabSize": 2,
       "wordWrapColumn": 100,
-      "showTrailingSpace": true    
+      "showTrailingSpace": true
     },
-    "kernelShutdown": true,
     "markdownCellConfig": {
+      "highlightTrailingWhitespace": true,
+      "indentUnit": "2",
+      "matchBrackets": false,
       "tabSize": 2,
       "wordWrapColumn": 100
     },
     "rawCellConfig": {
+      "highlightTrailingWhitespace": true,
+      "indentUnit": "2",
       "tabSize": 2,
       "wordWrapColumn": 100,
       "showTrailingSpace": true    

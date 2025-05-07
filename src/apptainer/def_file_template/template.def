@@ -1,0 +1,38 @@
+Bootstrap: docker
+From: ubuntu:22.04
+
+%post
+  # Commands to execute at build time
+  # Example:
+  # apt-get -y update
+
+%runscript
+  # Commands to execute when the container starts
+  # Examples:
+  # /usr/bin/bash
+
+%files
+  # Include any files to copy from the host file system in this section
+  # Example:
+  # /home/foo/.aws/credentials /home/bar/.aws/credentials
+
+%environment
+  # Set environment variables for runtime in this section
+  # Examples:
+  # export LC_ALL=C
+  # export PATH=/opt/bin:$PATH
+
+%test
+  # Commands to run to test the built image
+  # Examples:
+  # lsb_release -d
+  # echo $PATH
+
+%labels
+  Author_1 <first name> <last name>
+  Email_1 <email address>
+  Author_2 <first name> <last name>
+  Email_2 <email address>
+
+%help
+  Include a description of the image here.

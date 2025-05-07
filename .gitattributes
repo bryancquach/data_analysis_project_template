@@ -1,0 +1,1 @@
+task/**/*.ipynb filter=jupyter-output-clear

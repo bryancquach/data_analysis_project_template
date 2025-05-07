@@ -1,0 +1,4 @@
+[filter "jupyter-output-clear"]
+  clean = jupyter nbconvert --to=notebook --ClearOutputPreprocessor.enabled=True --stdout %f
+  smudge = cat
+  required

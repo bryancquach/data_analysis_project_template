@@ -2,7 +2,7 @@
 ARG OWNER=jupyter
 ARG BASE_CONTAINER=$OWNER/docker-stacks-foundation:ubuntu-22.04
 FROM $BASE_CONTAINER
-LABEL maintainer="Bryan Quach <bquach@rti.org>"
+LABEL maintainer="Bryan Quach <bryancquach@gmail.com>"
 
 # Set pipefail to prevent pipe bugs in RUN
 # https://github.com/hadolint/hadolint/wiki/DL4006

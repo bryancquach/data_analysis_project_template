@@ -66,7 +66,7 @@ AWS [ParallelCluster](https://aws.amazon.com/hpc/parallelcluster/) simplifies th
 ### Contributing to this repository
 
 * [Generating and adding an SSH key for command line repo access](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-* [Thinking from a modular perspective](https://github.com/bquach_rtiintl/omics_analysis_project_template/wiki/Modular-analysis-design). A primer for shifting your mindset of seeing an analysis or project as one monolithic task to seeing things as many interconnected, but distinct, smaller tasks.
+* [Thinking from a modular perspective](https://github.com/bryancquach/data_analysis_project_template/wiki/Modular-analysis-design). A primer for shifting your mindset of seeing an analysis or project as one monolithic task to seeing things as many interconnected, but distinct, smaller tasks.
 * [A great introduction to git-based version control](https://medium.com/@jake.page91/the-guide-to-git-i-never-had-a89048d4703a).
 * [Using the GitFlow framework for collaborative data analysis projects](https://ericmjl.github.io/essays-on-data-science/workflow/gitflow/). An introduction to some concepts around how analyses in this repository are structured (i.e., how to develop analysis plans), as well as the GitFlow framework for how analyses in this repository are managed.
 * [GitFlow in GitHub quickstart](https://docs.github.com/en/get-started/quickstart/github-flow). A quickstart guide for executing various tasks that are routinely used in the GitFlow framework.

@@ -3,7 +3,7 @@
 # Test Docker R environment for build issues.
 #
 # Contributors:
-#   Bryan Quach (bquach@rti.org)
+#   Bryan Quach (bryancquach@gmail.com)
 #
 # This script logs output to STDOUT with pertinent information regarding the R environment within
 # a Docker image, including:

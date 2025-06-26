@@ -10,7 +10,7 @@
 # The code herein is adapted from and extends the Docker Stacks R notebook:
 # https://github.com/jupyter/docker-stacks/blob/main/images/r-notebook/Dockerfile
 #
-# Contributors: Bryan Quach (bquach@rti.org)
+# Contributors: Bryan Quach (bryancquach@gmail.com)
 ####################################################################################################
 
 # ==================================== Base image ====================================

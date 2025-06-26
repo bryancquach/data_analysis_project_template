@@ -1,6 +1,18 @@
-# Omics data analysis project repository template
+# Data analysis project repository template
 
-This template repository provides an organizational structure for more quickly setting up projects focused on the analysis of omics data. The directory structure accomodates projects that focus mainly on using semi-processed omics data (e.g., transcript quantifications derived from RNA-seq reads) as opposed to starting from raw data from omics assays, though the latter is still feasible. This README should be replaced by `README_template.md` for new repositories created from this template repository.
+This template repository provides an organizational structure for more quickly setting up data analysis projects. The directory structure was designed with a particular focus on starting with semi-processed omics data (e.g., transcript quantifications derived from RNA-seq reads) as opposed to starting from raw data from omics assays, though the latter is still feasible. This README should be replaced by `README_template.md` for new repositories created from this template repository.
+
+# Is this template right for your project?
+
+This repo template is most helpful for projects that have the following characteristcs:
+* Reproducibility being a key requirement and priority.
+* Cross-platform compatibility (e.g., doing project work across local machines, an on-premise server, and cloud environments).
+* Complex data processing and analyses that can be divided into multiple tasks.
+* Data processing or analysis tasks that may require implementing multiple iterations due to exploration of parameter choices or methods.
+* Contributors needing to work simultaneously on independent components of the data processing and analysis workflow.
+* Dynamic teams where an individual may only be brought on to contribute to a subset of tasks and onboarding/offboarding is common.
+
+# Directory structure
 
 ```
 # Directory tree

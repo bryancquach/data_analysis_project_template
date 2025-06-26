@@ -4,7 +4,7 @@ This is a template script that can be copied to build new scripts that include c
 documentation and command line argument handling.
 
 Contributors:
-  Bryan Quach (bquach@rti.org)
+  Bryan Quach (bryancquach@gmail.com)
 """
 
 import argparse

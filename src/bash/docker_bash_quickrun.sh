@@ -4,7 +4,7 @@
 # Execute a bash command within a Docker container.
 #
 # Contributors:
-#   Bryan Quach (bquach@rti.org)
+#   Bryan Quach (bryancquach@gmail.com)
 #
 # This script allows you to execute bash commands similar to a standard terminal session but within
 # a Docker container of choice. This utility script was designed in response to an issue on the
